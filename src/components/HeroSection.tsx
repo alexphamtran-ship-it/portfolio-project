@@ -1,6 +1,14 @@
 import type { FC } from 'react';
+import { useTypingAnimation } from '../hooks/useTypingAnimation';
 
 const HeroSection: FC = () => {
+  const animatedText = useTypingAnimation({
+    words: ['Design', 'Strategy', 'Product'],
+    typingSpeed: 150,
+    deletingSpeed: 100,
+    delayBetweenWords: 2000,
+  });
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-6 py-12 gap-[135px]">
       {/* Hero Content */}
@@ -19,13 +27,19 @@ const HeroSection: FC = () => {
           {/* Name */}
           <div className="flex flex-wrap items-center gap-12 font-heading text-[56px] font-bold leading-tight">
             <span className="text-(--color-text-primary)">Alex </span>
-            <span className="text-(--color-brand-purple)">[Fill]</span>
+            <span className="text-(--color-brand-purple) inline-block min-w-[200px]">
+              {animatedText}
+              <span className="animate-pulse">|</span>
+            </span>
             <span className="text-(--color-text-primary)">Tran</span>
           </div>
 
           {/* Tagline */}
           <h1 className="font-heading text-[56px] font-normal text-(--color-text-primary) leading-tight">
-            [Fill] , it&apos;s my middle name.
+            <span className="text-(--color-brand-purple) inline-block min-w-[200px]">
+              {animatedText}
+              <span className="animate-pulse">|</span>
+            </span> , it&apos;s my middle name.
           </h1>
 
           {/* Description */}
