@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@400;600;700&family=Open+Sans:wght@400&family=Inter:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand-purple: #6c63ff;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #8a8a8a;
+  --color-text-light: #ebebeb;
+  --color-tag-text: #703c56;
+  --color-bg-primary: #000000;
+  
+  --font-heading: 'Afacad', sans-serif;
+  --font-body: 'Afacad', sans-serif;
+  --font-ui: 'Open Sans', sans-serif;
+  --font-small: 'Inter', sans-serif;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}

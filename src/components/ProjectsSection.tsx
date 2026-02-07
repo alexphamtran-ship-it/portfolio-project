@@ -1,0 +1,96 @@
+import type { FC } from 'react';
+import ProjectCard from './ProjectCard';
+
+const ProjectsSection: FC = () => {
+  const projects = [
+    {
+      title: 'GenAI Powered Donor Engagement Tool // GivePrism',
+      meta: [
+        { text: '2.0 Shipped' },
+        { text: 'In-Development' },
+        { text: 'Deloitte' }
+      ],
+      tags: [
+        { label: 'B2B Product' },
+        { label: 'Early Development' },
+        { label: 'Gen AI Product' },
+        { label: 'Data Analytics' },
+        { label: 'Higher Education / Non-Profit' }
+      ],
+      gradientClass: 'bg-gradient-to-b from-[rgba(219,116,166,0.5)] from-[14.9%] to-[rgba(164,151,244,1)] to-[87.5%]',
+      imageSrc: undefined
+    },
+    {
+      title: 'MVP Full Rebate Management Suite // GovConnect Energy Suite',
+      meta: [
+        { text: 'Handed Off' },
+        { text: 'MVP 1.0' },
+        { text: 'Deloitte' }
+      ],
+      tags: [
+        { label: 'B2B' },
+        { label: 'B2C' },
+        { label: '0 → 1' },
+        { label: 'Data Visualization' },
+        { label: 'Constituent Digital Experience' },
+        { label: 'Public Sector' }
+      ],
+      gradientClass: 'bg-gradient-to-b from-[rgba(27,134,146,1)] from-[14.9%] to-[rgba(73,67,169,1)] to-[87.5%]',
+      imageSrc: '/images/energy-suite-mockup.svg',
+      imageAlt: 'GovConnect Energy Suite Dashboard'
+    },
+    {
+      title: 'FinTech Case Study // Portfolio Monitoring',
+      meta: [
+        { text: 'Proof of Concept' },
+        { text: 'Completed' },
+        { text: 'Personal Project' }
+      ],
+      tags: [
+        { label: 'B2B Product' },
+        { label: 'Data Analytics' },
+        { label: 'FinTech' }
+      ],
+      gradientClass: 'bg-gradient-to-b from-[rgba(16,93,185,1)] from-[14.9%] to-[rgba(138,138,138,1)] to-[87.5%]',
+      imageSrc: undefined
+    },
+    {
+      title: 'ePayments Portal // State Health Care Client',
+      meta: [
+        { text: 'Shipped' },
+        { text: 'Full Release' },
+        { text: 'Deloitte' }
+      ],
+      tags: [
+        { label: 'B2C' },
+        { label: 'Redesign' },
+        { label: 'Health Care' },
+        { label: 'Finance' },
+        { label: 'Public Sector' }
+      ],
+      gradientClass: 'bg-gradient-to-b from-[rgba(204,96,96,1)] from-[41.35%] to-[rgba(246,207,87,1)] to-[85.1%]',
+      imageSrc: '/images/epayments-mockup.svg',
+      imageAlt: 'ePayments Portal Preview'
+    }
+  ];
+
+  return (
+    <section id="projects" className="px-6 py-12">
+      <div className="max-w-7xl mx-auto flex flex-col gap-12">
+        {projects.map((project, index) => (
+          <ProjectCard 
+            key={index}
+            title={project.title}
+            meta={project.meta}
+            tags={project.tags}
+            gradientClass={project.gradientClass}
+            imageSrc={project.imageSrc}
+            imageAlt={project.imageAlt}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default ProjectsSection;
