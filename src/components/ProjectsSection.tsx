@@ -18,7 +18,8 @@ const ProjectsSection: FC = () => {
         { label: 'Higher Education / Non-Profit' }
       ],
       gradientClass: 'bg-gradient-to-b from-[rgba(219,116,166,0.5)] from-[14.9%] to-[rgba(164,151,244,1)] to-[87.5%]',
-      imageSrc: undefined
+      imageSrc: undefined,
+      link: undefined
     },
     {
       title: 'MVP Full Rebate Management Suite // GovConnect Energy Suite',
@@ -37,7 +38,8 @@ const ProjectsSection: FC = () => {
       ],
       gradientClass: 'bg-gradient-to-b from-[rgba(27,134,146,1)] from-[14.9%] to-[rgba(73,67,169,1)] to-[87.5%]',
       imageSrc: '/images/energy-suite-mockup.svg',
-      imageAlt: 'GovConnect Energy Suite Dashboard'
+      imageAlt: 'GovConnect Energy Suite Dashboard',
+      link: undefined
     },
     {
       title: 'FinTech Case Study // Portfolio Monitoring',
@@ -52,7 +54,8 @@ const ProjectsSection: FC = () => {
         { label: 'FinTech' }
       ],
       gradientClass: 'bg-gradient-to-b from-[rgba(16,93,185,1)] from-[14.9%] to-[rgba(138,138,138,1)] to-[87.5%]',
-      imageSrc: undefined
+      imageSrc: undefined,
+      link: '/projects/fintech'
     },
     {
       title: 'ePayments Portal // State Health Care Client',
@@ -70,7 +73,8 @@ const ProjectsSection: FC = () => {
       ],
       gradientClass: 'bg-gradient-to-b from-[rgba(204,96,96,1)] from-[41.35%] to-[rgba(246,207,87,1)] to-[85.1%]',
       imageSrc: '/images/epayments-mockup.svg',
-      imageAlt: 'ePayments Portal Preview'
+      imageAlt: 'ePayments Portal Preview',
+      link: undefined
     }
   ];
 
@@ -86,6 +90,7 @@ const ProjectsSection: FC = () => {
             gradientClass={project.gradientClass}
             imageSrc={project.imageSrc}
             imageAlt={project.imageAlt}
+            link={project.link}
           />
         ))}
       </div>

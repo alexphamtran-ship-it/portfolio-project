@@ -1,4 +1,5 @@
 import type { FC } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface Tag {
   label: string;
@@ -15,6 +16,7 @@ interface ProjectCardProps {
   gradientClass: string;
   imageSrc?: string;
   imageAlt?: string;
+  link?: string;
 }
 
 const ProjectCard: FC<ProjectCardProps> = ({ 
@@ -23,11 +25,21 @@ const ProjectCard: FC<ProjectCardProps> = ({
   tags, 
   gradientClass,
   imageSrc,
-  imageAlt 
+  imageAlt,
+  link
 }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (link) {
+      navigate(link);
+    }
+  };
+
   return (
     <div 
-      className={`relative rounded-t-[5px] backdrop-blur-[50px] p-6 ${gradientClass} transition-transform hover:scale-[1.02] overflow-hidden`}
+      onClick={handleClick}
+      className={`relative rounded-t-[5px] backdrop-blur-[50px] p-6 ${gradientClass} transition-transform hover:scale-[1.02] overflow-hidden ${link ? 'cursor-pointer' : ''}`}
       style={{ minHeight: '524px' }}
     >
       <div className="flex flex-col lg:flex-row gap-8 h-full">
