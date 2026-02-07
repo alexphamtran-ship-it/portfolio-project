@@ -33,4 +33,19 @@
   html {
     scroll-behavior: smooth;
   }
+
+  @keyframes ticker-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@layer components {
+  .ticker-scroll {
+    animation: ticker-scroll 20s linear infinite;
+  }
 }

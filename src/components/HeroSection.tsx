@@ -27,7 +27,7 @@ const HeroSection: FC = () => {
           {/* Name */}
           <div className="flex flex-wrap items-center gap-12 font-heading text-[56px] font-bold leading-tight">
             <span className="text-(--color-text-primary)">Alex </span>
-            <span className="text-(--color-brand-purple) inline-block min-w-[200px]">
+            <span className="text-(--color-brand-purple) min-w-[200px]">
               {animatedText}
               <span className="animate-pulse">|</span>
             </span>
@@ -36,10 +36,7 @@ const HeroSection: FC = () => {
 
           {/* Tagline */}
           <h1 className="font-heading text-[56px] font-normal text-(--color-text-primary) leading-tight">
-            <span className="text-(--color-brand-purple) inline-block min-w-[200px]">
-              {animatedText}
-              <span className="animate-pulse">|</span>
-            </span> , it&apos;s my middle name.
+            {animatedText} , it&apos;s my middle name.
           </h1>
 
           {/* Description */}
@@ -50,28 +47,54 @@ const HeroSection: FC = () => {
         </div>
       </div>
 
-      {/* Work Categories */}
-      <div className="flex flex-col items-center gap-12">
-        <div className="flex flex-wrap items-center justify-center gap-6">
-          <span className="font-heading text-[40px] font-normal text-(--color-text-primary)">
-            My Work.
-          </span>
-          <div className="w-5 h-5 rounded-full bg-(--color-brand-purple)" />
-          <span className="font-heading text-[40px] font-normal text-(--color-text-primary)">
-            Gen AI 
-          </span>
-          <div className="w-5 h-5 rounded-full bg-(--color-brand-purple)" />
-          <span className="font-heading text-[40px] font-normal text-(--color-text-primary)">
-            Data Analytics
-          </span>
-          <div className="w-5 h-5 rounded-full bg-(--color-brand-purple)" />
-          <span className="font-heading text-[40px] font-normal text-(--color-text-primary)">
-            Constituent Experience 
-          </span>
-          <div className="w-5 h-5 rounded-full bg-(--color-brand-purple)" />
-          <span className="font-heading text-[40px] font-normal text-(--color-text-primary)">
-            ePayments
-          </span>
+      {/* Work Categories - Ticker Animation */}
+      <div className="flex flex-col items-center gap-12 w-full max-w-7xl">
+        <div className="relative w-full overflow-hidden">
+          <div className="flex items-center gap-6 ticker-scroll">
+            {/* First set of items */}
+            <span className="font-heading text-[40px] font-normal text-(--color-text-primary) whitespace-nowrap">
+              My Work.
+            </span>
+            <div className="w-5 h-5 rounded-full bg-(--color-brand-purple) shrink-0" />
+            <span className="font-heading text-[40px] font-normal text-(--color-text-primary) whitespace-nowrap">
+              Gen AI 
+            </span>
+            <div className="w-5 h-5 rounded-full bg-(--color-brand-purple) shrink-0" />
+            <span className="font-heading text-[40px] font-normal text-(--color-text-primary) whitespace-nowrap">
+              Data Analytics
+            </span>
+            <div className="w-5 h-5 rounded-full bg-(--color-brand-purple) shrink-0" />
+            <span className="font-heading text-[40px] font-normal text-(--color-text-primary) whitespace-nowrap">
+              Constituent Experience 
+            </span>
+            <div className="w-5 h-5 rounded-full bg-(--color-brand-purple) shrink-0" />
+            <span className="font-heading text-[40px] font-normal text-(--color-text-primary) whitespace-nowrap">
+              ePayments
+            </span>
+            <div className="w-5 h-5 rounded-full bg-(--color-brand-purple) shrink-0" />
+            
+            {/* Duplicate set for seamless loop */}
+            <span className="font-heading text-[40px] font-normal text-(--color-text-primary) whitespace-nowrap">
+              My Work.
+            </span>
+            <div className="w-5 h-5 rounded-full bg-(--color-brand-purple) shrink-0" />
+            <span className="font-heading text-[40px] font-normal text-(--color-text-primary) whitespace-nowrap">
+              Gen AI 
+            </span>
+            <div className="w-5 h-5 rounded-full bg-(--color-brand-purple) shrink-0" />
+            <span className="font-heading text-[40px] font-normal text-(--color-text-primary) whitespace-nowrap">
+              Data Analytics
+            </span>
+            <div className="w-5 h-5 rounded-full bg-(--color-brand-purple) shrink-0" />
+            <span className="font-heading text-[40px] font-normal text-(--color-text-primary) whitespace-nowrap">
+              Constituent Experience 
+            </span>
+            <div className="w-5 h-5 rounded-full bg-(--color-brand-purple) shrink-0" />
+            <span className="font-heading text-[40px] font-normal text-(--color-text-primary) whitespace-nowrap">
+              ePayments
+            </span>
+            <div className="w-5 h-5 rounded-full bg-(--color-brand-purple) shrink-0" />
+          </div>
         </div>
 
         {/* Scroll Indicator */}
