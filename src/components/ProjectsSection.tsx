@@ -74,7 +74,7 @@ const ProjectsSection: FC = () => {
       gradientClass: 'bg-gradient-to-b from-[rgba(204,96,96,1)] from-[41.35%] to-[rgba(246,207,87,1)] to-[85.1%]',
       imageSrc: '/images/epayments-mockup.svg',
       imageAlt: 'ePayments Portal Preview',
-      link: undefined
+      link: '/projects/epayments'
     }
   ];
 

@@ -6,6 +6,7 @@ import ProjectsSection from './components/ProjectsSection';
 import FinTechDetail from './pages/FinTechDetail';
 import GivePrismDetail from './pages/GivePrismDetail';
 import EnergySuiteDetail from './pages/EnergySuiteDetail';
+import EPaymentsDetail from './pages/EPaymentsDetail';
 import ScrollToTop from './components/ScrollToTop';
 
 const HomePage: FC = () => {
@@ -27,6 +28,7 @@ const App: FC = () => {
           <Route path="/projects/fintech" element={<FinTechDetail />} />
           <Route path="/projects/giveprism" element={<GivePrismDetail />} />
           <Route path="/projects/energy-suite" element={<EnergySuiteDetail />} />
+          <Route path="/projects/epayments" element={<EPaymentsDetail />} />
         </Routes>
       </div>
       <ContactBar />
