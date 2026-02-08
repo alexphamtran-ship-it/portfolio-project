@@ -9,7 +9,7 @@ const FinTechDetail: FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Back Button */}
         <button
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/#projects')}
           className="flex items-center gap-3 mb-12 group transition-transform hover:scale-105"
           aria-label="Go back to portfolio"
         >

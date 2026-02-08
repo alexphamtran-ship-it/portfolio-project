@@ -19,7 +19,7 @@ const ProjectsSection: FC = () => {
       ],
       gradientClass: 'bg-gradient-to-b from-[rgba(219,116,166,0.5)] from-[14.9%] to-[rgba(164,151,244,1)] to-[87.5%]',
       imageSrc: undefined,
-      link: undefined
+      link: '/projects/giveprism'
     },
     {
       title: 'MVP Full Rebate Management Suite // GovConnect Energy Suite',
@@ -39,7 +39,7 @@ const ProjectsSection: FC = () => {
       gradientClass: 'bg-gradient-to-b from-[rgba(27,134,146,1)] from-[14.9%] to-[rgba(73,67,169,1)] to-[87.5%]',
       imageSrc: '/images/energy-suite-mockup.svg',
       imageAlt: 'GovConnect Energy Suite Dashboard',
-      link: undefined
+      link: '/projects/energy-suite'
     },
     {
       title: 'FinTech Case Study // Portfolio Monitoring',
