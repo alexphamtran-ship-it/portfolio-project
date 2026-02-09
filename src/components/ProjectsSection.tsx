@@ -18,7 +18,7 @@ const ProjectsSection: FC = () => {
         { label: 'Higher Education / Non-Profit' }
       ],
       gradientClass: 'bg-gradient-to-b from-[rgba(219,116,166,0.5)] from-[14.9%] to-[rgba(164,151,244,1)] to-[87.5%]',
-      imageSrc: undefined,
+      imageSrc: '/images/GP_Splash.svg',
       link: '/projects/giveprism'
     },
     {
@@ -54,7 +54,7 @@ const ProjectsSection: FC = () => {
         { label: 'FinTech' }
       ],
       gradientClass: 'bg-gradient-to-b from-[rgba(16,93,185,1)] from-[14.9%] to-[rgba(138,138,138,1)] to-[87.5%]',
-      imageSrc: undefined,
+      imageSrc: 'images/FinTech_Splash.svg',
       link: '/projects/fintech'
     },
     {

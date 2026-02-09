@@ -40,7 +40,6 @@ const ProjectCard: FC<ProjectCardProps> = ({
     <div 
       onClick={handleClick}
       className={`relative rounded-t-[5px] backdrop-blur-[50px] p-6 ${gradientClass} transition-transform hover:scale-[1.02] overflow-hidden ${link ? 'cursor-pointer' : ''}`}
-      style={{ minHeight: '524px' }}
     >
       <div className="flex flex-col lg:flex-row gap-8 h-full">
         {/* Left Content */}
