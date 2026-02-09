@@ -17,6 +17,8 @@ interface ProjectCardProps {
   imageSrc?: string;
   imageAlt?: string;
   link?: string;
+  roundTop?: boolean;
+  roundBottom?: boolean;
 }
 
 const ProjectCard: FC<ProjectCardProps> = ({ 
@@ -26,7 +28,9 @@ const ProjectCard: FC<ProjectCardProps> = ({
   gradientClass,
   imageSrc,
   imageAlt,
-  link
+  link,
+  roundTop = false,
+  roundBottom = false
 }) => {
   const navigate = useNavigate();
 
@@ -36,11 +40,17 @@ const ProjectCard: FC<ProjectCardProps> = ({
     }
   };
 
+  const borderRadiusClass = `${roundTop ? 'rounded-t-[5px]' : ''} ${roundBottom ? 'rounded-b-[5px]' : ''}`.trim();
+
   return (
     <div 
       onClick={handleClick}
-      className={`relative rounded-t-[5px] backdrop-blur-[50px] p-6 ${gradientClass} transition-transform hover:scale-[1.02] overflow-hidden ${link ? 'cursor-pointer' : ''}`}
+      className={`relative backdrop-blur-[50px] p-6 ${gradientClass} ${borderRadiusClass} overflow-hidden ${link ? 'cursor-pointer group' : ''}`}
     >
+      {/* Gradient sheen overlay on hover */}
+      {link && (
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+      )}
       <div className="flex flex-col lg:flex-row gap-8 h-full">
         {/* Left Content */}
         <div className="flex flex-col gap-6 lg:max-w-md z-10">

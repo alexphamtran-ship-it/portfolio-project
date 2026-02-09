@@ -80,7 +80,7 @@ const ProjectsSection: FC = () => {
 
   return (
     <section id="projects" className="px-6 py-12">
-      <div className="max-w-7xl mx-auto flex flex-col gap-12">
+      <div className="max-w-7xl mx-auto flex flex-col gap-0">
         {projects.map((project, index) => (
           <ProjectCard 
             key={index}
@@ -91,6 +91,8 @@ const ProjectsSection: FC = () => {
             imageSrc={project.imageSrc}
             imageAlt={project.imageAlt}
             link={project.link}
+            roundTop={index === 0}
+            roundBottom={index === projects.length - 1}
           />
         ))}
       </div>
