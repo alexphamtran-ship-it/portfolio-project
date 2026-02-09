@@ -25,13 +25,15 @@ const HeroSection: FC = () => {
         {/* Text Content */}
         <div className="flex flex-col gap-4">
           {/* Name */}
-          <div className="flex flex-wrap items-center gap-12 font-heading text-[56px] font-bold leading-tight">
-            <span className="text-(--color-text-primary)">Alex </span>
-            <span className="text-(--color-brand-purple) min-w-[200px]">
-              {animatedText}
-              <span className="animate-pulse">|</span>
-            </span>
-            <span className="text-(--color-text-primary)">Tran</span>
+          <div className="flex flex-wrap items-center font-heading text-[56px] font-bold leading-tight">
+            <span className="text-(--color-text-primary) mr-12">Alex </span>
+            <div className="flex items-center">
+              <span className="text-(--color-brand-purple)">
+                {animatedText}
+                <span className="animate-pulse">|</span>
+              </span>
+              <span className="text-(--color-text-primary) ml-12">Tran</span>
+            </div>
           </div>
 
           {/* Tagline */}
