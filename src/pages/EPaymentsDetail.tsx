@@ -136,11 +136,11 @@ const EPaymentsDetail: FC = () => {
           <div className="flex flex-col gap-4">
             {/* Responsive Dashboard Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-black">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
+                <h3 className="font-heading text-2xl font-normal text-white">
                   Responsive and Direct Payments Dashboard
                 </h3>
-                <p className="font-heading text-base font-normal text-black leading-relaxed">
+                <p className="font-heading text-base font-normal text-white leading-relaxed">
                   Information that is clear, concise, and thoughtfully directs scarcity mindset users into the right actions they need to take.
                 </p>
               </div>
@@ -158,11 +158,11 @@ const EPaymentsDetail: FC = () => {
 
             {/* Payment Submission Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-black">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
+                <h3 className="font-heading text-2xl font-normal text-white">
                   Seamless Payment Submission and Tracking
                 </h3>
-                <p className="font-heading text-xl font-normal text-black leading-relaxed">
+                <p className="font-heading text-xl font-normal text-white leading-relaxed">
                   Users have an easy time understanding how much money is leaving their pockets during and throughout their time on these programs.
                 </p>
               </div>
@@ -180,11 +180,11 @@ const EPaymentsDetail: FC = () => {
 
             {/* Risk States Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-black">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
+                <h3 className="font-heading text-2xl font-normal text-white">
                   Digestible and Actionable Risk States
                 </h3>
-                <p className="font-heading text-base font-normal text-black leading-relaxed">
+                <p className="font-heading text-base font-normal text-white leading-relaxed">
                   Continuous health care can be very tough for our users so having clear ways to get them back to coverage is critical.
                 </p>
               </div>

@@ -136,15 +136,20 @@ const EnergySuiteDetail: FC = () => {
           <div className="flex flex-col gap-4">
             {/* Metrics Dashboard Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-black">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
+                <h3 className="font-heading text-2xl font-normal text-white">
                   Metrics That Drive Decisions
                 </h3>
-                <p className="font-heading text-base font-normal text-black leading-relaxed">
+                <p className="font-heading text-base font-normal text-white leading-relaxed">
                   High-level KPIs and risk indicators surface program health, funding progress, and equity outcomes—helping officers manage complex rebate programs with confidence.
                 </p>
               </div>
               <img 
+                src="/images/energy-suite/metrics-dashboard-bg.svg" 
+                alt="Metrics Dashboard showing program KPIs" 
+                className="w-full h-auto"
+              />
+               <img 
                 src="/images/energy-suite/metrics-dashboard.svg" 
                 alt="Metrics Dashboard showing program KPIs" 
                 className="w-full h-auto"
@@ -153,11 +158,11 @@ const EnergySuiteDetail: FC = () => {
 
             {/* Constituent Experience Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-black">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
+                <h3 className="font-heading text-2xl font-normal text-white">
                   Accessible, Trust-First Experience for Constituents
                 </h3>
-                <p className="font-heading text-base font-normal text-black leading-relaxed">
+                <p className="font-heading text-base font-normal text-white leading-relaxed">
                   A clear and approachable portal that helps constituents quickly understand programs and complete applications—without unnecessary complexity or friction.
                 </p>
               </div>
@@ -180,11 +185,11 @@ const EnergySuiteDetail: FC = () => {
 
             {/* Contractor Portal Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-[32px] font-normal text-black">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
+                <h3 className="font-heading text-[32px] font-normal text-white">
                   Seamless Project Tracking for Contractors
                 </h3>
-                <p className="font-heading text-base font-normal text-black leading-relaxed">
+                <p className="font-heading text-base font-normal text-white leading-relaxed">
                   Integrated project intake and tracking for critical contractors that will be boots on the ground advertising and running the installation of these energy programs.
                 </p>
               </div>

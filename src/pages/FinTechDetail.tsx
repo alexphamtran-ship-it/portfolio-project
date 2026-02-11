@@ -61,11 +61,11 @@ const FinTechDetail: FC = () => {
           <div className="flex flex-col gap-4">
             {/* Portfolio Health Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/10 py-2 px-4 flex flex-col gap-2">
-                <h2 className="font-heading text-2xl font-normal text-(--color-bg-primary)">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
+                <h2 className="font-heading text-2xl font-normal text-white">
                   At-a-Glance Portfolio Health
                 </h2>
-                <p className="font-heading text-base font-normal text-(--color-bg-primary)">
+                <p className="font-heading text-base font-normal text-white">
                   A consolidated view of key performance metrics and variance signals, giving investors a fast read on each company&apos;s health alongside top-line portfolio performance.
                 </p>
               </div>
@@ -78,11 +78,11 @@ const FinTechDetail: FC = () => {
 
             {/* Variance Monitoring Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/10 py-2 px-4 flex flex-col gap-2">
-                <h2 className="font-heading text-2xl font-normal text-(--color-bg-primary)">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
+                <h2 className="font-heading text-2xl font-normal text-white">
                   Deep Variance Monitoring
                 </h2>
-                <p className="font-heading text-base font-normal text-(--color-bg-primary)">
+                <p className="font-heading text-base font-normal text-white">
                   Investors can quickly move from portfolio-level signals to detailed variance analysis, drilling into individual line items to understand what&apos;s driving performance gaps.
                 </p>
               </div>

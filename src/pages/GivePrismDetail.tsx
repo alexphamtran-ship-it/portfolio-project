@@ -143,11 +143,11 @@ const GivePrismDetail: FC = () => {
           <div className="flex flex-col gap-4">
             {/* Natural-Language Segmentation Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-[#191919]">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
+                <h3 className="font-heading text-2xl font-normal text-white">
                   Natural-Language Segmentation, Built for Control
                 </h3>
-                <p className="font-heading text-base font-normal text-black leading-relaxed">
+                <p className="font-heading text-base font-normal text-white leading-relaxed">
                   Users can start with a simple prompt, then refine it through validation. The AI agent translates intent into filters and generates a targeted donor list—while keeping the process transparent and reviewable with clear human-in-the-loop control.
                 </p>
               </div>
@@ -170,11 +170,11 @@ const GivePrismDetail: FC = () => {
 
             {/* Refine Without Breaking Flow Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-black">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
+                <h3 className="font-heading text-2xl font-normal text-white">
                   Refine Without Breaking Flow
                 </h3>
-                <p className="font-heading text-base font-normal text-black leading-relaxed">
+                <p className="font-heading text-base font-normal text-white leading-relaxed">
                   A persistent side panel allows users to continue refining their donor list in context, applying additional filters and adjustments without navigating away from the list view.
                 </p>
               </div>
@@ -187,11 +187,11 @@ const GivePrismDetail: FC = () => {
 
             {/* AI Assistant Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-black">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
+                <h3 className="font-heading text-2xl font-normal text-white">
                   An AI Assistant, Built into the Workflow
                 </h3>
-                <p className="font-heading text-base font-normal text-black leading-relaxed">
+                <p className="font-heading text-base font-normal text-white leading-relaxed">
                   An AI assistant that recognizes real time, the data that the user wants to interface with and recognizes what the user is looking to do, creating content, strategy suggestions or getting high level data analysis.
                 </p>
               </div>
@@ -204,11 +204,11 @@ const GivePrismDetail: FC = () => {
 
             {/* Data Snapshots Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-[32px] font-normal text-black">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
+                <h3 className="font-heading text-[32px] font-normal text-white">
                   Data Snapshots at Every Level //De-Prioritized Designs
                 </h3>
-                <p className="font-heading text-base font-normal text-black leading-relaxed">
+                <p className="font-heading text-base font-normal text-white leading-relaxed">
                   Exploration of each prospect at the level of detail needed, from high-level signals to deep, contextual insights. Interactive, easy-to-read visuals make complex data faster to understand and easier to act on.
                 </p>
               </div>
