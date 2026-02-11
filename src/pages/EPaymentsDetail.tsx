@@ -135,8 +135,8 @@ const EPaymentsDetail: FC = () => {
           {/* Right Column - Screenshots */}
           <div className="flex flex-col gap-4">
             {/* Responsive Dashboard Card */}
-            <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 p-8 flex flex-col gap-8">
-              <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-4">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 py-2 px-4 flex flex-col gap-2">
                 <h3 className="font-heading text-2xl font-normal text-black">
                   Responsive and Direct Payments Dashboard
                 </h3>
@@ -144,23 +144,21 @@ const EPaymentsDetail: FC = () => {
                   Information that is clear, concise, and thoughtfully directs scarcity mindset users into the right actions they need to take.
                 </p>
               </div>
-              <div className="w-full flex flex-col gap-8">
-                <img 
-                  src="/images/epayments/dashboard-mockup-1.svg" 
-                  alt="Responsive Payments Dashboard showing premium details" 
-                  className="w-full h-auto"
-                />
-                <img 
-                  src="/images/epayments/dashboard-mockup-2.svg" 
-                  alt="Mobile views of payment states" 
-                  className="w-full h-auto"
-                />
-              </div>
+              <img 
+                src="/images/epayments/dashboard-mockup-1.svg" 
+                alt="Responsive Payments Dashboard showing premium details" 
+                className="w-full h-auto"
+              />
+              <img 
+                src="/images/epayments/dashboard-mockup-2.svg" 
+                alt="Mobile views of payment states" 
+                className="w-full h-auto"
+              />
             </div>
 
             {/* Payment Submission Card */}
-            <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 p-8 flex flex-col gap-8">
-              <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-4">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 py-2 px-4 flex flex-col gap-2">
                 <h3 className="font-heading text-2xl font-normal text-black">
                   Seamless Payment Submission and Tracking
                 </h3>
@@ -168,23 +166,21 @@ const EPaymentsDetail: FC = () => {
                   Users have an easy time understanding how much money is leaving their pockets during and throughout their time on these programs.
                 </p>
               </div>
-              <div className="w-full flex flex-col gap-8">
-                <img 
-                  src="/images/epayments/payment-review.svg" 
-                  alt="Payment review interface" 
-                  className="w-full h-auto"
-                />
-                <img 
-                  src="/images/epayments/payment-history.svg" 
-                  alt="Payment history tracking" 
-                  className="w-full h-auto"
-                />
-              </div>
+              <img 
+                src="/images/epayments/payment-review.svg" 
+                alt="Payment review interface" 
+                className="w-full h-auto"
+              />
+              <img 
+                src="/images/epayments/payment-history.svg" 
+                alt="Payment history tracking" 
+                className="w-full h-auto"
+              />
             </div>
 
             {/* Risk States Card */}
-            <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 p-8 flex flex-col gap-8">
-              <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-4">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/90 py-2 px-4 flex flex-col gap-2">
                 <h3 className="font-heading text-2xl font-normal text-black">
                   Digestible and Actionable Risk States
                 </h3>
@@ -192,18 +188,16 @@ const EPaymentsDetail: FC = () => {
                   Continuous health care can be very tough for our users so having clear ways to get them back to coverage is critical.
                 </p>
               </div>
-              <div className="w-full flex flex-col gap-8">
-                <img 
-                  src="/images/epayments/risk-state-1.svg" 
-                  alt="Risk state notification for restricted enrollment" 
-                  className="w-full h-auto"
-                />
-                <img 
-                  src="/images/epayments/risk-state-2.svg" 
-                  alt="Benefits lost notification with recovery steps" 
-                  className="w-full h-auto"
-                />
-              </div>
+              <img 
+                src="/images/epayments/risk-state-1.svg" 
+                alt="Risk state notification for restricted enrollment" 
+                className="w-full h-auto"
+              />
+              <img 
+                src="/images/epayments/risk-state-2.svg" 
+                alt="Benefits lost notification with recovery steps" 
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </div>

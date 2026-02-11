@@ -60,8 +60,8 @@ const FinTechDetail: FC = () => {
           {/* Right Column - Screenshots */}
           <div className="flex flex-col gap-4">
             {/* Portfolio Health Card */}
-            <div className="rounded-[5px] backdrop-blur-[50px] bg-white/10 p-8 flex flex-col gap-8">
-              <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-4">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/10 py-2 px-4 flex flex-col gap-2">
                 <h2 className="font-heading text-2xl font-normal text-(--color-bg-primary)">
                   At-a-Glance Portfolio Health
                 </h2>
@@ -69,18 +69,16 @@ const FinTechDetail: FC = () => {
                   A consolidated view of key performance metrics and variance signals, giving investors a fast read on each company&apos;s health alongside top-line portfolio performance.
                 </p>
               </div>
-              <div className="w-full">
-                <img 
-                  src="/images/fintech/portfolio-health.svg" 
-                  alt="Portfolio Health Dashboard" 
-                  className="w-full h-auto"
-                />
-              </div>
+              <img 
+                src="/images/fintech/portfolio-health.svg" 
+                alt="Portfolio Health Dashboard" 
+                className="w-full h-auto"
+              />
             </div>
 
             {/* Variance Monitoring Card */}
-            <div className="rounded-[5px] backdrop-blur-[50px] bg-white/10 p-8 flex flex-col gap-8">
-              <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-4">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/10 py-2 px-4 flex flex-col gap-2">
                 <h2 className="font-heading text-2xl font-normal text-(--color-bg-primary)">
                   Deep Variance Monitoring
                 </h2>
@@ -88,18 +86,16 @@ const FinTechDetail: FC = () => {
                   Investors can quickly move from portfolio-level signals to detailed variance analysis, drilling into individual line items to understand what&apos;s driving performance gaps.
                 </p>
               </div>
-              <div className="w-full flex flex-col gap-8">
-                <img 
-                  src="/images/fintech/variance-monitoring-1.svg" 
-                  alt="Variance Monitoring Dashboard 1" 
-                  className="w-full h-auto"
-                />
-                <img 
-                  src="/images/fintech/variance-monitoring-2.svg" 
-                  alt="Variance Monitoring Dashboard 2" 
-                  className="w-full h-auto"
-                />
-              </div>
+              <img 
+                src="/images/fintech/variance-monitoring-1.svg" 
+                alt="Variance Monitoring Dashboard 1" 
+                className="w-full h-auto"
+              />
+              <img 
+                src="/images/fintech/variance-monitoring-2.svg" 
+                alt="Variance Monitoring Dashboard 2" 
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </div>
