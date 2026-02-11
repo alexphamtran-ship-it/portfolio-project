@@ -37,7 +37,7 @@ const ProjectsSection: FC = () => {
         { label: 'Public Sector' }
       ],
       gradientClass: 'bg-gradient-to-b from-[rgba(27,134,146,1)] from-[14.9%] to-[rgba(73,67,169,1)] to-[87.5%]',
-      imageSrc: '/images/energy-suite-mockup.svg',
+      imageSrc: '/images/Rebates_Splash.svg',
       imageAlt: 'GovConnect Energy Suite Dashboard',
       link: '/projects/energy-suite'
     },
@@ -72,7 +72,7 @@ const ProjectsSection: FC = () => {
         { label: 'Public Sector' }
       ],
       gradientClass: 'bg-gradient-to-b from-[rgba(204,96,96,1)] from-[41.35%] to-[rgba(246,207,87,1)] to-[85.1%]',
-      imageSrc: '/images/epayments-mockup.svg',
+      imageSrc: '/images/epay_Splash.svg',
       imageAlt: 'ePayments Portal Preview',
       link: '/projects/epayments'
     }

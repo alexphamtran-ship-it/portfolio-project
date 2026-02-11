@@ -8,7 +8,7 @@ const ContactBar: FC = () => {
       </span>
       <div className="w-5 h-5 rounded-full bg-(--color-brand-purple) shrink-0" />
       <a 
-        href="https://linkedin.com" 
+        href="https://www.linkedin.com/in/alex-pham-tran/" 
         target="_blank" 
         rel="noopener noreferrer"
         className="font-heading text-[40px] font-normal text-(--color-text-primary) underline hover:text-(--color-brand-purple) transition-colors"
@@ -17,8 +17,8 @@ const ContactBar: FC = () => {
       </a>
       <div className="w-5 h-5 rounded-full bg-(--color-brand-purple) shrink-0" />
       <a 
-        href="#resume" 
-        target="_blank" 
+        href="C:\Users\alexp\OneDrive\Documents\portfolio_project\public\files\Alex_Tran_2026.pdf" 
+        download= "Alex_Tran_2026 Resume.pdf" 
         rel="noopener noreferrer"
         className="font-heading text-[40px] font-normal text-(--color-text-primary) underline hover:text-(--color-brand-purple) transition-colors"
       >

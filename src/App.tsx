@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import HeroSection from './components/HeroSection';
 import ContactBar from './components/ContactBar';
 import ProjectsSection from './components/ProjectsSection';
@@ -19,6 +19,9 @@ const HomePage: FC = () => {
 };
 
 const App: FC = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
   return (
     <div className="min-h-screen bg-(--color-bg-primary) flex flex-col">
       <ScrollToTop />
@@ -31,7 +34,7 @@ const App: FC = () => {
           <Route path="/projects/epayments" element={<EPaymentsDetail />} />
         </Routes>
       </div>
-      <ContactBar />
+      {isHomePage && <ContactBar />}
     </div>
   );
 };
