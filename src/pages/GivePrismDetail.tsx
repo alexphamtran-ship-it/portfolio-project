@@ -99,15 +99,17 @@ const GivePrismDetail: FC = () => {
               >
                 My Highlight Reel
               </h2>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
-                Led the full end-to-end workflow redesign, from ideation to design—that address emerged key user pain points and technical constraints.
-              </p>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
-                Owned product roadmap and influenced GTM strategy through market and user research, prioritize high-impact designs and features.
-              </p>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
-                Restructured processes that streamlined collaboration across product, design, and engineering, including establishing a Design System Library and clear review/feedback channels.
-              </p>
+              <ul className="list-disc pl-6 flex flex-col gap-6">
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
+                  Led the full end-to-end workflow redesign, from ideation to design—that address emerged key user pain points and technical constraints.
+                </li>
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
+                  Owned product roadmap and influenced GTM strategy through market and user research, prioritize high-impact designs and features.
+                </li>
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
+                  Restructured processes that streamlined collaboration across product, design, and engineering, including establishing a Design System Library and clear review/feedback channels.
+                </li>
+              </ul>
             </div>
 
             {/* Challenges */}
@@ -123,15 +125,17 @@ const GivePrismDetail: FC = () => {
               >
                 Challenges
               </h2>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
-                Maintaining product momentum amid competing priorities, as leadership and team balanced client services work alongside product development.
-              </p>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
-                Rapidly evolving market and customer needs as technology and organizational missions shifted.
-              </p>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
-                Technical constraints and steep learning curves while designing with novel, emerging technologies.
-              </p>
+              <ul className="list-disc pl-6 flex flex-col gap-6">
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
+                  Maintaining product momentum amid competing priorities, as leadership and team balanced client services work alongside product development.
+                </li>
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
+                  Rapidly evolving market and customer needs as technology and organizational missions shifted.
+                </li>
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
+                  Technical constraints and steep learning curves while designing with novel, emerging technologies.
+                </li>
+              </ul>
             </div>
           </div>
 
