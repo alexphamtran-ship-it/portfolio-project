@@ -5,30 +5,29 @@ const EnergySuiteDetail: FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-(--color-bg-primary) px-6 py-12">
+    <div className="min-h-screen bg-(--color-bg-primary)">
       <div className="max-w-7xl mx-auto">
-        {/* Back Button */}
-        <button
-          onClick={() => navigate('/#projects')}
-          className="flex items-center gap-3 mb-12 group transition-transform hover:scale-105"
-          aria-label="Go back to portfolio"
-        >
-          <div className="w-[37px] h-[37px] rounded-full border-[3.5px] border-[#f3f3f3] flex items-center justify-center">
-            <img 
-              src="/icons/back-arrow.svg" 
-              alt="" 
-              className="w-5 h-5"
-            />
-          </div>
-          <span className="font-heading text-2xl font-normal text-(--color-text-primary)">
-            Back
-          </span>
-        </button>
-
         {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-[556px_1fr] gap-12 lg:gap-[69px] items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[556px_1fr] gap-0 items-start">
           {/* Left Column - Content */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 px-6 py-12">
+            {/* Back Button */}
+            <button
+              onClick={() => navigate('/#projects')}
+              className="flex items-center gap-3 group transition-transform hover:scale-105"
+              aria-label="Go back to portfolio"
+            >
+              <div className="w-[37px] h-[37px] rounded-full border-[3.5px] border-[#f3f3f3] flex items-center justify-center">
+                <img 
+                  src="/icons/back-arrow.svg" 
+                  alt="" 
+                  className="w-5 h-5"
+                />
+              </div>
+              <span className="font-heading text-2xl font-normal text-(--color-text-primary)">
+                Back
+              </span>
+            </button>
             {/* Intro Section */}
             <div className="flex flex-col gap-4">
               <h1 
@@ -126,10 +125,10 @@ const EnergySuiteDetail: FC = () => {
                 Challenges
               </h2>
               <ul className="list-disc pl-6 flex flex-col gap-6">
-                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
                   Driving structured product decisions in a client services setting without the benefit of an embedded product culture or established product workflows.
                 </li>
-                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
                   Operating with limited early user research, as rebate programs and user expectations were still taking shape.
                 </li>
               </ul>
@@ -137,14 +136,19 @@ const EnergySuiteDetail: FC = () => {
           </div>
 
           {/* Right Column - Screenshots */}
-          <div className="flex flex-col gap-12">
+          <div 
+            className="flex flex-col gap-12 p-8 min-h-screen"
+            style={{
+              background: 'linear-gradient(90deg, rgba(27,134,146,1) 14.9%, rgba(73,67,169,1) 87.5%)'
+            }}
+          >
             {/* Metrics Dashboard Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-white">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/10 py-2 px-4 flex flex-col gap-2 shadow-[0px_2px_2px_rgba(0,0,0,0.25)] border border-white/20">
+                <h3 className="font-heading text-2xl font-normal text-(--color-text-primary)">
                   Metrics That Drive Decisions
                 </h3>
-                <p className="font-heading text-base font-normal text-white leading-relaxed">
+                <p className="font-heading text-base font-normal text-(--color-text-primary) leading-relaxed">
                   High-level KPIs and risk indicators surface program health, funding progress, and equity outcomes—helping officers manage complex rebate programs with confidence.
                 </p>
               </div>
@@ -162,11 +166,11 @@ const EnergySuiteDetail: FC = () => {
 
             {/* Constituent Experience Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-white">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/10 py-2 px-4 flex flex-col gap-2 shadow-[0px_2px_2px_rgba(0,0,0,0.25)] border border-white/20">
+                <h3 className="font-heading text-2xl font-normal text-(--color-text-primary)">
                   Accessible, Trust-First Experience for Constituents
                 </h3>
-                <p className="font-heading text-base font-normal text-white leading-relaxed">
+                <p className="font-heading text-base font-normal text-(--color-text-primary) leading-relaxed">
                   A clear and approachable portal that helps constituents quickly understand programs and complete applications—without unnecessary complexity or friction.
                 </p>
               </div>
@@ -189,11 +193,11 @@ const EnergySuiteDetail: FC = () => {
 
             {/* Contractor Portal Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-white">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/10 py-2 px-4 flex flex-col gap-2 shadow-[0px_2px_2px_rgba(0,0,0,0.25)] border border-white/20">
+                <h3 className="font-heading text-2xl font-normal text-(--color-text-primary)">
                   Seamless Project Tracking for Contractors
                 </h3>
-                <p className="font-heading text-base font-normal text-white leading-relaxed">
+                <p className="font-heading text-base font-normal text-(--color-text-primary) leading-relaxed">
                   Integrated project intake and tracking for critical contractors that will be boots on the ground advertising and running the installation of these energy programs.
                 </p>
               </div>

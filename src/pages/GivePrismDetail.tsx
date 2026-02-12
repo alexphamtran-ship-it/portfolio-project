@@ -5,30 +5,28 @@ const GivePrismDetail: FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-(--color-bg-primary) px-6 py-12">
-      <div className="max-w-7xl mx-auto">
-        {/* Back Button */}
-        <button
-          onClick={() => navigate('/#projects')}
-          className="flex items-center gap-3 mb-12 group transition-transform hover:scale-105"
-          aria-label="Go back to portfolio"
-        >
-          <div className="w-[37px] h-[37px] rounded-full border-[3.5px] border-[#f3f3f3] flex items-center justify-center">
-            <img 
-              src="/icons/back-arrow.svg" 
-              alt="" 
-              className="w-5 h-5"
-            />
-          </div>
-          <span className="font-heading text-2xl font-normal text-(--color-text-primary)">
-            Back
-          </span>
-        </button>
-
-        {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-[556px_1fr] gap-12 items-start">
-          {/* Left Column - Content */}
-          <div className="flex flex-col gap-6">
+    <div className="min-h-screen bg-(--color-bg-primary)">
+      {/* Main Content Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-0 lg:gap-2 items-start">
+        {/* Left Column - Content */}
+        <div className="flex flex-col gap-6 px-6 py-12 w-full lg:w-[580px] lg:ml-8">
+            {/* Back Button */}
+            <button
+              onClick={() => navigate('/#projects')}
+              className="flex items-center gap-3 group transition-transform hover:scale-105"
+              aria-label="Go back to portfolio"
+            >
+              <div className="w-[37px] h-[37px] rounded-full border-[3.5px] border-[#f3f3f3] flex items-center justify-center">
+                <img 
+                  src="/icons/back-arrow.svg" 
+                  alt="" 
+                  className="w-5 h-5"
+                />
+              </div>
+              <span className="font-heading text-2xl font-normal text-(--color-text-primary)">
+                Back
+              </span>
+            </button>
             {/* Intro Section */}
             <div className="flex flex-col gap-4">
               <h1 
@@ -78,7 +76,7 @@ const GivePrismDetail: FC = () => {
               >
                 Outcome and Impact
               </h2>
-              <p className="font-heading text-4xl font-normal text-(--color-text-primary) leading-relaxed">
+              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
                 Drove first client adoption, surfacing $12.4M in potential revenue value.
               </p>
               <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
@@ -126,13 +124,13 @@ const GivePrismDetail: FC = () => {
                 Challenges
               </h2>
               <ul className="list-disc pl-6 flex flex-col gap-6">
-                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
                   Maintaining product momentum amid competing priorities, as leadership and team balanced client services work alongside product development.
                 </li>
-                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
                   Rapidly evolving market and customer needs as technology and organizational missions shifted.
                 </li>
-                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
                   Technical constraints and steep learning curves while designing with novel, emerging technologies.
                 </li>
               </ul>
@@ -140,14 +138,19 @@ const GivePrismDetail: FC = () => {
           </div>
 
           {/* Right Column - Screenshots */}
-          <div className="flex flex-col gap-12">
+          <div 
+            className="flex flex-col gap-12 p-8 min-h-screen"
+            style={{
+              background: 'linear-gradient(90deg, rgba(27,134,146,1) 14.9%, rgba(73,67,169,1) 87.5%)'
+            }}
+          >
             {/* Natural-Language Segmentation Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-white">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/10 py-2 px-4 flex flex-col gap-2 shadow-[0px_2px_2px_rgba(0,0,0,0.25)] border border-white/20">
+                <h3 className="font-heading text-2xl font-normal text-(--color-text-primary)">
                   Natural-Language Segmentation, Built for Control
                 </h3>
-                <p className="font-heading text-base font-normal text-white leading-relaxed">
+                <p className="font-heading text-base font-normal text-(--color-text-primary) leading-relaxed">
                   Users can start with a simple prompt, then refine it through validation. The AI agent translates intent into filters and generates a targeted donor list—while keeping the process transparent and reviewable with clear human-in-the-loop control.
                 </p>
               </div>
@@ -170,11 +173,11 @@ const GivePrismDetail: FC = () => {
 
             {/* Refine Without Breaking Flow Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-white">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/10 py-2 px-4 flex flex-col gap-2 shadow-[0px_2px_2px_rgba(0,0,0,0.25)] border border-white/20">
+                <h3 className="font-heading text-2xl font-normal text-(--color-text-primary)">
                   Refine Without Breaking Flow
                 </h3>
-                <p className="font-heading text-base font-normal text-white leading-relaxed">
+                <p className="font-heading text-base font-normal text-(--color-text-primary) leading-relaxed">
                   A persistent side panel allows users to continue refining their donor list in context, applying additional filters and adjustments without navigating away from the list view.
                 </p>
               </div>
@@ -187,11 +190,11 @@ const GivePrismDetail: FC = () => {
 
             {/* AI Assistant Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-white">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/10 py-2 px-4 flex flex-col gap-2 shadow-[0px_2px_2px_rgba(0,0,0,0.25)] border border-white/20">
+                <h3 className="font-heading text-2xl font-normal text-(--color-text-primary)">
                   An AI Assistant, Built into the Workflow
                 </h3>
-                <p className="font-heading text-base font-normal text-white leading-relaxed">
+                <p className="font-heading text-base font-normal text-(--color-text-primary) leading-relaxed">
                   An AI assistant that recognizes real time, the data that the user wants to interface with and recognizes what the user is looking to do, creating content, strategy suggestions or getting high level data analysis.
                 </p>
               </div>
@@ -204,11 +207,11 @@ const GivePrismDetail: FC = () => {
 
             {/* Data Snapshots Card */}
             <div className="flex flex-col gap-4">
-              <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-2xl font-normal text-white">
+              <div className="rounded-[5px] backdrop-blur-[50px] bg-white/10 py-2 px-4 flex flex-col gap-2 shadow-[0px_2px_2px_rgba(0,0,0,0.25)] border border-white/20">
+                <h3 className="font-heading text-2xl font-normal text-(--color-text-primary)">
                   Data Snapshots at Every Level //De-Prioritized Designs
                 </h3>
-                <p className="font-heading text-base font-normal text-white leading-relaxed">
+                <p className="font-heading text-base font-normal text-(--color-text-primary) leading-relaxed">
                   Exploration of each prospect at the level of detail needed, from high-level signals to deep, contextual insights. Interactive, easy-to-read visuals make complex data faster to understand and easier to act on.
                 </p>
               </div>
@@ -225,7 +228,6 @@ const GivePrismDetail: FC = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };
