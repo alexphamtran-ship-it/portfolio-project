@@ -81,7 +81,7 @@ const GivePrismDetail: FC = () => {
               <p className="font-heading text-4xl font-normal text-(--color-text-primary) leading-relaxed">
                 Drove first client adoption, surfacing $12.4M in potential revenue value.
               </p>
-              <p className="font-heading text-4xl font-normal text-(--color-text-primary) leading-relaxed">
+              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
                 Launched the firm&apos;s first agentic AI chatbot to market.
               </p>
             </div>
@@ -140,7 +140,7 @@ const GivePrismDetail: FC = () => {
           </div>
 
           {/* Right Column - Screenshots */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-12">
             {/* Natural-Language Segmentation Card */}
             <div className="flex flex-col gap-4">
               <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
@@ -205,7 +205,7 @@ const GivePrismDetail: FC = () => {
             {/* Data Snapshots Card */}
             <div className="flex flex-col gap-4">
               <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-[32px] font-normal text-white">
+                <h3 className="font-heading text-2xl font-normal text-white">
                   Data Snapshots at Every Level //De-Prioritized Designs
                 </h3>
                 <p className="font-heading text-base font-normal text-white leading-relaxed">

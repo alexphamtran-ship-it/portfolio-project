@@ -34,10 +34,11 @@ const EPaymentsDetail: FC = () => {
               <h1 
                 className="font-heading text-[48px] font-medium leading-tight"
                 style={{
-                  background: 'linear-gradient(270deg, rgba(204,96,96,1) 58.65%, rgba(246,207,87,1) 14.9%)',
+                  backgroundImage: 'linear-gradient(270deg, rgba(246,207,87,1) 14.9%, rgba(204,96,96,1) 58.65%)',
                   WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
+                  color: 'transparent'
                 }}
               >
                 ePay Management Portal // State HealthCare Client
@@ -70,18 +71,19 @@ const EPaymentsDetail: FC = () => {
               <h2 
                 className="font-heading text-[48px] font-medium leading-tight"
                 style={{
-                  background: 'linear-gradient(270deg, rgba(204,96,96,1) 58.65%, rgba(246,207,87,1) 14.9%)',
+                  backgroundImage: 'linear-gradient(270deg, rgba(246,207,87,1) 14.9%, rgba(204,96,96,1) 58.65%)',
                   WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
+                  color: 'transparent'
                 }}
               >
                 Outcome and Impact
               </h2>
-              <p className="font-heading text-4xl font-normal text-(--color-text-primary) leading-relaxed">
+              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
                 38% increase in successful payments
               </p>
-              <p className="font-heading text-4xl font-normal text-(--color-text-primary) leading-relaxed">
+              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
                 55% decrease in time spent on paying premiums
               </p>
             </div>
@@ -91,23 +93,26 @@ const EPaymentsDetail: FC = () => {
               <h2 
                 className="font-heading text-[48px] font-medium leading-tight"
                 style={{
-                  background: 'linear-gradient(270deg, rgba(204,96,96,1) 58.65%, rgba(246,207,87,1) 14.9%)',
+                  backgroundImage: 'linear-gradient(270deg, rgba(246,207,87,1) 14.9%, rgba(204,96,96,1) 58.65%)',
                   WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
+                  color: 'transparent'
                 }}
               >
                 My Highlight Reel
               </h2>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
-                Turned vague, ambiguous requests into clear product direction through live, collaborative design sessions with clients.
-              </p>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
-                Carried designs through to production under tight timelines by partnering closely with engineering.
-              </p>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
-                Made tradeoffs to balance user needs, client requirements, and a constrained technical stack.
-              </p>
+              <ul className="list-disc pl-6 flex flex-col gap-6">
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
+                  Turned vague, ambiguous requests into clear product direction through live, collaborative design sessions with clients.
+                </li>
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
+                  Carried designs through to production under tight timelines by partnering closely with engineering.
+                </li>
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
+                  Made tradeoffs to balance user needs, client requirements, and a constrained technical stack.
+                </li>
+              </ul>
             </div>
 
             {/* Challenges */}
@@ -115,25 +120,28 @@ const EPaymentsDetail: FC = () => {
               <h2 
                 className="font-heading text-[48px] font-medium leading-tight"
                 style={{
-                  background: 'linear-gradient(270deg, rgba(204,96,96,1) 58.65%, rgba(246,207,87,1) 14.9%)',
+                  backgroundImage: 'linear-gradient(270deg, rgba(246,207,87,1) 14.9%, rgba(204,96,96,1) 58.65%)',
                   WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
+                  color: 'transparent'
                 }}
               >
                 Challenges
               </h2>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
-                Designing for a vulnerable user base operating under financial and time constraints
-              </p>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
-                Translating complex legal and policy requirements into clear, human-centered experiences
-              </p>
+              <ul className="list-disc pl-6 flex flex-col gap-6">
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
+                  Designing for a vulnerable user base operating under financial and time constraints
+                </li>
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
+                  Translating complex legal and policy requirements into clear, human-centered experiences
+                </li>
+              </ul>
             </div>
           </div>
 
           {/* Right Column - Screenshots */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-12">
             {/* Responsive Dashboard Card */}
             <div className="flex flex-col gap-4">
               <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
@@ -162,7 +170,7 @@ const EPaymentsDetail: FC = () => {
                 <h3 className="font-heading text-2xl font-normal text-white">
                   Seamless Payment Submission and Tracking
                 </h3>
-                <p className="font-heading text-xl font-normal text-white leading-relaxed">
+                <p className="font-heading text-base font-normal text-white leading-relaxed">
                   Users have an easy time understanding how much money is leaving their pockets during and throughout their time on these programs.
                 </p>
               </div>

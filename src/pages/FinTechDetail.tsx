@@ -58,7 +58,7 @@ const FinTechDetail: FC = () => {
           </div>
 
           {/* Right Column - Screenshots */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-12">
             {/* Portfolio Health Card */}
             <div className="flex flex-col gap-4">
               <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">

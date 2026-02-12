@@ -78,10 +78,10 @@ const EnergySuiteDetail: FC = () => {
               >
                 Outcome and Impact
               </h2>
-              <p className="font-heading text-4xl font-normal text-(--color-text-primary) leading-relaxed">
+              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
                 3 Pilot Clients Secured
               </p>
-              <p className="font-heading text-4xl font-normal text-(--color-text-primary) leading-relaxed">
+              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
                 $20M+ in 1st Year Revenue
               </p>
             </div>
@@ -99,15 +99,17 @@ const EnergySuiteDetail: FC = () => {
               >
                 My Highlight Reel
               </h2>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
-                Incubated and implemented core product features within a completely new greenfield market, helping establish the firm&apos;s initial footprint in the space.
-              </p>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
-                Designed and handed off three distinct end-to-end user flows for radically different user groups within six months, aligning product delivery with market timing and customer demand.
-              </p>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
-                Brought executives, product leaders, and SMEs together through structured design workshops to turn an open-ended vision into defined product features and design direction.
-              </p>
+              <ul className="list-disc pl-6 flex flex-col gap-6">
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
+                  Incubated and implemented core product features within a completely new greenfield market, helping establish the firm&apos;s initial footprint in the space.
+                </li>
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
+                  Designed and handed off three distinct end-to-end user flows for radically different user groups within six months, aligning product delivery with market timing and customer demand.
+                </li>
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-[30px]">
+                  Brought executives, product leaders, and SMEs together through structured design workshops to turn an open-ended vision into defined product features and design direction.
+                </li>
+              </ul>
             </div>
 
             {/* Challenges */}
@@ -123,17 +125,19 @@ const EnergySuiteDetail: FC = () => {
               >
                 Challenges
               </h2>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
-                Driving structured product decisions in a client services setting without the benefit of an embedded product culture or established product workflows.
-              </p>
-              <p className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
-                Operating with limited early user research, as rebate programs and user expectations were still taking shape.
-              </p>
+              <ul className="list-disc pl-6 flex flex-col gap-6">
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
+                  Driving structured product decisions in a client services setting without the benefit of an embedded product culture or established product workflows.
+                </li>
+                <li className="font-heading text-2xl font-normal text-(--color-text-primary) leading-relaxed">
+                  Operating with limited early user research, as rebate programs and user expectations were still taking shape.
+                </li>
+              </ul>
             </div>
           </div>
 
           {/* Right Column - Screenshots */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-12">
             {/* Metrics Dashboard Card */}
             <div className="flex flex-col gap-4">
               <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
@@ -186,7 +190,7 @@ const EnergySuiteDetail: FC = () => {
             {/* Contractor Portal Card */}
             <div className="flex flex-col gap-4">
               <div className="rounded-[5px] backdrop-blur-[50px] bg-[#5a5a5a]/80 py-2 px-4 flex flex-col gap-2">
-                <h3 className="font-heading text-[32px] font-normal text-white">
+                <h3 className="font-heading text-2xl font-normal text-white">
                   Seamless Project Tracking for Contractors
                 </h3>
                 <p className="font-heading text-base font-normal text-white leading-relaxed">
