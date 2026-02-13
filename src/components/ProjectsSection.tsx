@@ -79,8 +79,8 @@ const ProjectsSection: FC = () => {
   ];
 
   return (
-    <section id="projects" className="px-6 py-12">
-      <div className="max-w-7xl mx-auto flex flex-col gap-0">
+    <section id="projects" className="py-12">
+      <div className="w-full flex flex-col gap-0">
         {projects.map((project, index) => (
           <ProjectCard 
             key={index}

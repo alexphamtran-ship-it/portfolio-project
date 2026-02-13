@@ -130,7 +130,7 @@ const GivePrismDetail: FC = () => {
               <h2 
                 className="font-heading text-[48px] font-medium leading-tight"
                 style={{
-                  background: 'linear-gradient(0deg, rgba(219,116,166,0.5) 24.9%, rgba(164,151,244,1) 87.5%)',
+                  background: 'linear-gradient(90deg, rgba(219,116,166,0.5) 24.9%, rgba(164,151,244,1) 87.5%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text'
@@ -156,7 +156,7 @@ const GivePrismDetail: FC = () => {
               <h2 
                 className="font-heading text-[48px] font-medium leading-tight"
                 style={{
-                  background: 'linear-gradient(0deg, rgba(219,116,166,0.5) 24.9%, rgba(164,151,244,1) 87.5%)',
+                  background: 'linear-gradient(90deg, rgba(219,116,166,0.5) 24.9%, rgba(164,151,244,1) 87.5%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text'
