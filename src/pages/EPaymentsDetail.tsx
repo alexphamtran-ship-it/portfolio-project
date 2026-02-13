@@ -200,7 +200,7 @@ const EPaymentsDetail: FC = () => {
 
           {/* Right Column - Screenshots */}
           <div 
-            className="flex flex-col gap-12 p-8 min-h-screen"
+            className="flex flex-col gap-12 p-4 lg:p-8 min-h-screen"
             style={{
               background: 'linear-gradient(270deg, rgba(246,207,87,1) 14.9%, rgba(204,96,96,1) 58.65%)'
             }}

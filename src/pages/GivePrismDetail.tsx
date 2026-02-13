@@ -200,7 +200,7 @@ const GivePrismDetail: FC = () => {
 
           {/* Right Column - Screenshots */}
           <div 
-            className="flex flex-col gap-12 p-8 min-h-screen"
+            className="flex flex-col gap-12 p-4 lg:p-8 min-h-screen"
             style={{
               background: 'linear-gradient(90deg, rgba(219,116,166,0.5) 24.9%, rgba(164,151,244,1) 87.5%)'
             }}

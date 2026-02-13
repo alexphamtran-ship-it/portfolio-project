@@ -117,7 +117,7 @@ const FinTechDetail: FC = () => {
 
           {/* Right Column - Screenshots */}
           <div 
-            className="flex flex-col gap-12 p-8 min-h-screen"
+            className="flex flex-col gap-12 p-4 lg:p-8 min-h-screen"
             style={{
               background: 'linear-gradient(90deg, rgba(16,93,185,1) 14.9%, rgba(138,138,138,1) 87.5%)'
             }}
