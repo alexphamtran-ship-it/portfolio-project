@@ -1,8 +1,48 @@
-import type { FC } from 'react';
+import { type FC, useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const GivePrismDetail: FC = () => {
   const navigate = useNavigate();
+  const [isFixed, setIsFixed] = useState(false);
+  const buttonContainerRef = useRef<HTMLDivElement>(null);
+  const buttonInitialTopRef = useRef<number>(0);
+
+  useEffect(() => {
+    // Store initial position
+    if (buttonContainerRef.current && buttonInitialTopRef.current === 0) {
+      const rect = buttonContainerRef.current.getBoundingClientRect();
+      buttonInitialTopRef.current = rect.top + window.scrollY;
+    }
+
+    let rafId: number;
+    const handleScroll = () => {
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+      }
+      
+      rafId = requestAnimationFrame(() => {
+        if (buttonInitialTopRef.current === 0) return;
+        
+        // Fix to top when scroll passes the button's original position
+        const shouldBeFixed = window.scrollY >= buttonInitialTopRef.current;
+        setIsFixed(shouldBeFixed);
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+      }
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <div className="min-h-screen bg-(--color-bg-primary)">
@@ -134,6 +174,26 @@ const GivePrismDetail: FC = () => {
                   Technical constraints and steep learning curves while designing with novel, emerging technologies.
                 </li>
               </ul>
+            </div>
+
+            {/* Back to Top Button */}
+            <div ref={buttonContainerRef} className={`pt-6 transition-all duration-200 ease-out ${isFixed ? 'fixed top-0 left-0 lg:left-8 z-50' : ''}`}>
+              <button
+                onClick={scrollToTop}
+                className="flex items-center gap-3 group transition-transform hover:scale-105"
+                aria-label="Back to top"
+              >
+                <div className="w-[37px] h-[37px] rounded-full border-[3.5px] border-[#f3f3f3] flex items-center justify-center rotate-90">
+                  <img 
+                    src="/icons/back-arrow.svg" 
+                    alt="" 
+                    className="w-5 h-5"
+                  />
+                </div>
+                <span className="font-heading text-2xl font-normal text-(--color-text-primary)">
+                  Back to Top
+                </span>
+              </button>
             </div>
           </div>
 

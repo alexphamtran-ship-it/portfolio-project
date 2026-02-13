@@ -78,7 +78,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
             {tags.map((tag, index) => (
               <span 
                 key={index}
-                className="px-4 py-2 rounded-full bg-white/20 font-heading text-2xl font-normal text-(--color-tag-text) backdrop-blur-sm"
+                className="px-4 py-2 rounded-full bg-white/20 font-heading text-2xl font-normal text-white backdrop-blur-sm"
               >
                 {tag.label}
               </span>
