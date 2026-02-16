@@ -277,7 +277,7 @@ const EnergySuiteDetail: FC = () => {
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
                 />
-                   <img 
+              <img 
                 src="/images/energy-suite/contractor-portal_2.png" 
                 alt="Contractor project tracking interface" 
                 className="w-full h-auto"
