@@ -5,6 +5,7 @@ interface TypingAnimationOptions {
   typingSpeed?: number;
   deletingSpeed?: number;
   delayBetweenWords?: number;
+  paused?: boolean;
 }
 
 export const useTypingAnimation = ({
@@ -12,6 +13,7 @@ export const useTypingAnimation = ({
   typingSpeed = 150,
   deletingSpeed = 100,
   delayBetweenWords = 2000,
+  paused = false,
 }: TypingAnimationOptions) => {
   const [displayText, setDisplayText] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
@@ -19,7 +21,13 @@ export const useTypingAnimation = ({
   const timeoutRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
-    if (words.length === 0) return;
+    if (words.length === 0 || paused) {
+      // Clear any pending timeouts when paused
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+      return;
+    }
     
     const currentWord = words[wordIndex];
 
@@ -53,7 +61,7 @@ export const useTypingAnimation = ({
         clearTimeout(timeoutRef.current);
       }
     };
-  }, [displayText, wordIndex, isDeleting, words, typingSpeed, deletingSpeed, delayBetweenWords]);
+  }, [displayText, wordIndex, isDeleting, words, typingSpeed, deletingSpeed, delayBetweenWords, paused]);
 
   return displayText;
 };

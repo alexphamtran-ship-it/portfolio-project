@@ -1,16 +1,44 @@
-import type { FC } from 'react';
+import { type FC, useState, useEffect, useRef } from 'react';
 import { useTypingAnimation } from '../hooks/useTypingAnimation';
 
 const HeroSection: FC = () => {
+  const [isPaused, setIsPaused] = useState(false);
+  const heroRef = useRef<HTMLElement>(null);
+
+  // Detect when user scrolls past the hero section
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Pause animation when hero section is not in view
+        setIsPaused(!entry.isIntersecting);
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of hero is visible
+        rootMargin: '0px'
+      }
+    );
+
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
+    }
+
+    return () => {
+      if (heroRef.current) {
+        observer.unobserve(heroRef.current);
+      }
+    };
+  }, []);
+
   const animatedText = useTypingAnimation({
     words: ['Design', 'Strategy', 'Product'],
     typingSpeed: 150,
     deletingSpeed: 100,
     delayBetweenWords: 2000,
+    paused: isPaused,
   });
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 py-12 gap-[135px]">
+    <section ref={heroRef} className="min-h-screen flex flex-col items-center justify-center px-6 py-12 gap-[135px]">
       {/* Hero Content */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 max-w-7xl">
         {/* Circular Badge */}
