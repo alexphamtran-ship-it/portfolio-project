@@ -46,7 +46,7 @@ const ProjectsSection: FC = () => {
       meta: [
         { text: 'Proof of Concept' },
         { text: 'Completed' },
-        { text: 'Project' }
+        { text: 'Personal' }
       ],
       tags: [
         { label: 'B2B Product' },
