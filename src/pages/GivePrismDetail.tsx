@@ -216,21 +216,21 @@ const GivePrismDetail: FC = () => {
                 </p>
               </div>
               <img 
-                src="/images/giveprism/screenshot-1.svg" 
+                src="/images/giveprism/screenshot-1.png" 
                 alt="Natural Language Segmentation Interface" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />
               <img 
-                src="/images/giveprism/screenshot-2.svg" 
+                src="/images/giveprism/screenshot-2.png" 
                 alt="Prompt Validation Interface" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />
               <img 
-                src="/images/giveprism/screenshot-3.svg" 
+                src="/images/giveprism/screenshot-3.png" 
                 alt="Donor List View" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
@@ -249,7 +249,7 @@ const GivePrismDetail: FC = () => {
                 </p>
               </div>
               <img 
-                src="/images/giveprism/screenshot-4.svg" 
+                src="/images/giveprism/screenshot-4.png" 
                 alt="Filter Panel Interface" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
@@ -268,7 +268,7 @@ const GivePrismDetail: FC = () => {
                 </p>
               </div>
               <img 
-                src="/images/giveprism/screenshot-5.svg" 
+                src="/images/giveprism/screenshot-5.png" 
                 alt="AI Assistant Interface" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
@@ -287,14 +287,14 @@ const GivePrismDetail: FC = () => {
                 </p>
               </div>
               <img 
-                src="/images/giveprism/screenshot-6.svg" 
+                src="/images/giveprism/screenshot-6.png" 
                 alt="Data Snapshot Dashboard" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />
               <img 
-                src="/images/giveprism/screenshot-7.svg" 
+                src="/images/giveprism/screenshot-7.png" 
                 alt="Detailed Prospect View" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}

@@ -216,14 +216,14 @@ const EPaymentsDetail: FC = () => {
                 </p>
               </div>
               <img 
-                src="/images/epayments/dashboard-mockup-1.svg" 
+                src="/images/epayments/dashboard-mockup-1.png" 
                 alt="Responsive Payments Dashboard showing premium details" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />
               <img 
-                src="/images/epayments/dashboard-mockup-2.svg" 
+                src="/images/epayments/dashboard-mockup-2.png" 
                 alt="Mobile views of payment states" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
@@ -242,14 +242,14 @@ const EPaymentsDetail: FC = () => {
                 </p>
               </div>
               <img 
-                src="/images/epayments/payment-review.svg" 
+                src="/images/epayments/payment-review.png" 
                 alt="Payment review interface" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />
               <img 
-                src="/images/epayments/payment-history.svg" 
+                src="/images/epayments/payment-history.png" 
                 alt="Payment history tracking" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
@@ -268,14 +268,14 @@ const EPaymentsDetail: FC = () => {
                 </p>
               </div>
               <img 
-                src="/images/epayments/risk-state-1.svg" 
+                src="/images/epayments/risk-state-1.png" 
                 alt="Risk state notification for restricted enrollment" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />
               <img 
-                src="/images/epayments/risk-state-2.svg" 
+                src="/images/epayments/risk-state-2.png" 
                 alt="Benefits lost notification with recovery steps" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}

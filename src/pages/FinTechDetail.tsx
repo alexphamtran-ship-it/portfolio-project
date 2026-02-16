@@ -133,7 +133,7 @@ const FinTechDetail: FC = () => {
                 </p>
               </div>
               <img 
-                src="/images/fintech/portfolio-health.svg" 
+                src="/images/fintech/portfolio-health.png" 
                 alt="Portfolio Health Dashboard" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
@@ -152,14 +152,14 @@ const FinTechDetail: FC = () => {
                 </p>
               </div>
               <img 
-                src="/images/fintech/variance-monitoring-1.svg" 
+                src="/images/fintech/variance-monitoring-1.png" 
                 alt="Variance Monitoring Dashboard 1" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />
               <img 
-                src="/images/fintech/variance-monitoring-2.svg" 
+                src="/images/fintech/variance-monitoring-2.png" 
                 alt="Variance Monitoring Dashboard 2" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}

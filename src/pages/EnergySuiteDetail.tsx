@@ -212,14 +212,14 @@ const EnergySuiteDetail: FC = () => {
                 </p>
               </div>
               <img 
-                src="/images/energy-suite/metrics-dashboard-bg.svg" 
+                src="/images/energy-suite/metrics-dashboard-bg.png" 
                 alt="Metrics Dashboard showing program KPIs" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />
                <img 
-                src="/images/energy-suite/metrics-dashboard.svg" 
+                src="/images/energy-suite/metrics-dashboard.png" 
                 alt="Metrics Dashboard showing program KPIs" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
@@ -238,21 +238,21 @@ const EnergySuiteDetail: FC = () => {
                 </p>
               </div>
               <img 
-                src="/images/energy-suite/AccessforConsis.svg" 
+                src="/images/energy-suite/AccessforConsis.png" 
                 alt="Constituent portal welcome screen and rebate explain screen" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />
               <img 
-                src="/images/energy-suite/constituent-flow-2.svg" 
+                src="/images/energy-suite/constituent-flow-2.png" 
                 alt="Application flow screens" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />
               <img 
-                src="/images/energy-suite/constituent-flow-3.svg" 
+                src="/images/energy-suite/constituent-flow-3.png" 
                 alt="Additional flow screens" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
@@ -271,7 +271,7 @@ const EnergySuiteDetail: FC = () => {
                 </p>
               </div>
               <img 
-                src="/images/energy-suite/contractor-portal.svg" 
+                src="/images/energy-suite/contractor-portal.png" 
                 alt="Contractor project tracking interface" 
                 className="w-full h-auto"
                 style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
