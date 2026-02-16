@@ -219,11 +219,15 @@ const EPaymentsDetail: FC = () => {
                 src="/images/epayments/dashboard-mockup-1.svg" 
                 alt="Responsive Payments Dashboard showing premium details" 
                 className="w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                loading="lazy"
               />
               <img 
                 src="/images/epayments/dashboard-mockup-2.svg" 
                 alt="Mobile views of payment states" 
                 className="w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                loading="lazy"
               />
             </div>
 
@@ -241,11 +245,15 @@ const EPaymentsDetail: FC = () => {
                 src="/images/epayments/payment-review.svg" 
                 alt="Payment review interface" 
                 className="w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                loading="lazy"
               />
               <img 
                 src="/images/epayments/payment-history.svg" 
                 alt="Payment history tracking" 
                 className="w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                loading="lazy"
               />
             </div>
 
@@ -263,11 +271,15 @@ const EPaymentsDetail: FC = () => {
                 src="/images/epayments/risk-state-1.svg" 
                 alt="Risk state notification for restricted enrollment" 
                 className="w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                loading="lazy"
               />
               <img 
                 src="/images/epayments/risk-state-2.svg" 
                 alt="Benefits lost notification with recovery steps" 
                 className="w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                loading="lazy"
               />
             </div>
           </div>

@@ -215,11 +215,15 @@ const EnergySuiteDetail: FC = () => {
                 src="/images/energy-suite/metrics-dashboard-bg.svg" 
                 alt="Metrics Dashboard showing program KPIs" 
                 className="w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                loading="lazy"
               />
                <img 
                 src="/images/energy-suite/metrics-dashboard.svg" 
                 alt="Metrics Dashboard showing program KPIs" 
                 className="w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                loading="lazy"
               />
             </div>
 
@@ -237,16 +241,22 @@ const EnergySuiteDetail: FC = () => {
                 src="/images/energy-suite/AccessforConsis.svg" 
                 alt="Constituent portal welcome screen and rebate explain screen" 
                 className="w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                loading="lazy"
               />
               <img 
                 src="/images/energy-suite/constituent-flow-2.svg" 
                 alt="Application flow screens" 
                 className="w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                loading="lazy"
               />
               <img 
                 src="/images/energy-suite/constituent-flow-3.svg" 
                 alt="Additional flow screens" 
                 className="w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                loading="lazy"
               />
             </div>
 
@@ -264,6 +274,8 @@ const EnergySuiteDetail: FC = () => {
                 src="/images/energy-suite/contractor-portal.svg" 
                 alt="Contractor project tracking interface" 
                 className="w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+                loading="lazy"
               />
             </div>
           </div>
