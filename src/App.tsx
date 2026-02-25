@@ -8,6 +8,7 @@ import GivePrismDetail from './pages/GivePrismDetail';
 import EnergySuiteDetail from './pages/EnergySuiteDetail';
 import EPaymentsDetail from './pages/EPaymentsDetail';
 import ScrollToTop from './components/ScrollToTop';
+import { usePageTracking } from './hooks/useAnalytics';
 
 const HomePage: FC = () => {
   return (
@@ -21,6 +22,9 @@ const HomePage: FC = () => {
 const App: FC = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+
+  // Track page views on route change
+  usePageTracking();
 
   return (
     <div className="min-h-screen bg-(--color-bg-primary) flex flex-col">

@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { trackEvent } from '../hooks/useAnalytics';
 
 interface Tag {
   label: string;
@@ -36,6 +37,12 @@ const ProjectCard: FC<ProjectCardProps> = ({
 
   const handleClick = () => {
     if (link) {
+      // Track project click
+      trackEvent('project_click', {
+        project_name: title,
+        project_link: link,
+      });
+      
       navigate(link);
     }
   };
