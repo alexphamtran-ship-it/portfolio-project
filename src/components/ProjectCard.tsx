@@ -58,7 +58,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
       {link && (
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
       )}
-      <div className="flex flex-col lg:flex-row gap-8 h-full">
+      <div className="flex flex-col lg:flex-row gap-8 h-full max-w-7xl mx-auto w-full">
         {/* Left Content */}
         <div className="flex flex-col gap-6 lg:max-w-md z-10">
           {/* Title */}
