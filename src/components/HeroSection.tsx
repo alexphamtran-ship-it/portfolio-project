@@ -72,7 +72,7 @@ const HeroSection: FC = () => {
           {/* Description */}
           <p className="font-heading text-[32px] font-normal text-(--color-text-secondary) leading-relaxed max-w-4xl">
             Alex is an end-to-end product designer @Deloitte Digital who has worked across  
-            multiple different industries and markets.  (also his actual middle name is Pham-Minh).
+            multiple different industries and markets (also his actual middle name is Pham-Minh).
           </p>
         </div>
       </div>
