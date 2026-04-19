@@ -64,7 +64,7 @@ const GivePrismDetail: FC = () => {
           {/* Left Screenshot */}
           <div className="flex-1 bg-[#1a1a1a] rounded-xl overflow-hidden">
             <img
-              src="/images/giveprism/screenshot-1.png"
+              src="/images/giveprism/mainscreen1.png"
               alt="GivePrism Landing - Segment Selection Interface"
               className="w-full h-auto"
               loading="lazy"
@@ -73,7 +73,7 @@ const GivePrismDetail: FC = () => {
           {/* Right Screenshot */}
           <div className="flex-1 bg-[#1a1a1a] rounded-xl overflow-hidden">
             <img
-              src="/images/giveprism/screenshot-6.png"
+              src="/images/giveprism/mainscreenshot-2.png"
               alt="GivePrism Prospect Profile - Donor Analytics"
               className="w-full h-auto"
               loading="lazy"
