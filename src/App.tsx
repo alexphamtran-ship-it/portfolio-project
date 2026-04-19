@@ -7,6 +7,7 @@ import FinTechDetail from './pages/FinTechDetail';
 import GivePrismDetail from './pages/GivePrismDetail';
 import EnergySuiteDetail from './pages/EnergySuiteDetail';
 import EPaymentsDetail from './pages/EPaymentsDetail';
+import AboutMe from './pages/AboutMe';
 import ScrollToTop from './components/ScrollToTop';
 import { usePageTracking } from './hooks/useAnalytics';
 
@@ -32,6 +33,7 @@ const App: FC = () => {
       <div className="flex-grow">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutMe />} />
           <Route path="/projects/fintech" element={<FinTechDetail />} />
           <Route path="/projects/giveprism" element={<GivePrismDetail />} />
           <Route path="/projects/energy-suite" element={<EnergySuiteDetail />} />

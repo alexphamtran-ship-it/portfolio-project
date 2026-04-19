@@ -1,8 +1,7 @@
 import { type FC, useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import ProjectNavBar from '../components/ProjectNavBar';
 
 const FinTechDetail: FC = () => {
-  const navigate = useNavigate();
   const [isFixed, setIsFixed] = useState(false);
   const buttonContainerRef = useRef<HTMLDivElement>(null);
   const buttonInitialTopRef = useRef<number>(0);
@@ -46,27 +45,11 @@ const FinTechDetail: FC = () => {
 
   return (
     <div className="min-h-screen bg-(--color-bg-primary)">
+        <ProjectNavBar />
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-0 lg:gap-2 items-start">
           {/* Left Column - Intro */}
           <div className="flex flex-col gap-4 px-6 py-12 w-full lg:w-[556px] lg:ml-8">
-            {/* Back Button */}
-            <button
-              onClick={() => navigate('/#projects')}
-              className="flex items-center gap-3 group transition-transform hover:scale-105"
-              aria-label="Go back to portfolio"
-            >
-              <div className="w-[37px] h-[37px] rounded-full border-[3.5px] border-[#f3f3f3] flex items-center justify-center">
-                <img 
-                  src="/icons/back-arrow.svg" 
-                  alt="" 
-                  className="w-5 h-5"
-                />
-              </div>
-              <span className="font-heading text-2xl font-normal text-(--color-text-primary)">
-                Back
-              </span>
-            </button>
             {/* Title with Gradient */}
             <h1 
               className="font-heading text-[48px] font-normal leading-tight"
