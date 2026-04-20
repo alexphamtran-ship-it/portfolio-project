@@ -126,16 +126,14 @@ const GivePrismDetail: FC = () => {
         </h2>
       </div>
 
-      {/* Design Sections with Gradient Backgrounds */}
-      <div className="flex flex-col gap-0">
-
+      {/* Design Sections — single gradient box, all sections inside */}
+      <div
+        className="w-full flex flex-col rounded-t-[5px] pb-8"
+        style={gradientStyle}
+      >
         {/* Natural-Language Segmentation */}
-        <div
-          className="w-full rounded-t-[5px] backdrop-blur-[50px]"
-          style={gradientStyle}
-        >
-          {/* Caption */}
-          <div className="px-6 lg:px-10 pt-6 pb-4 max-w-[1440px] mx-auto">
+        <div className="w-full">
+          <div className="px-6 lg:px-10 pt-8 pb-4 max-w-[1440px] mx-auto">
             <div className="flex flex-col gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-6 py-5 shadow-sm">
               <h3 className="font-heading text-2xl font-normal text-black">
                 Natural-Language Segmentation, Built for Control
@@ -145,43 +143,22 @@ const GivePrismDetail: FC = () => {
               </p>
             </div>
           </div>
-
-          {/* Screenshots */}
-          <div className="flex flex-col gap-6 px-6 lg:px-10 pb-8 max-w-[1440px] mx-auto">
+          <div className="flex flex-col gap-6 px-6 lg:px-10 pb-10 max-w-[1440px] mx-auto">
             <div className="bg-[#1a1a1a] rounded-xl overflow-hidden">
-              <img
-                src="/images/giveprism/screenshot-1.png"
-                alt="Natural Language Segmentation Interface"
-                className="w-full h-auto"
-                loading="lazy"
-              />
+              <img src="/images/giveprism/screenshot-1.png" alt="Natural Language Segmentation Interface" className="w-full h-auto" loading="lazy" />
             </div>
             <div className="bg-[#1a1a1a] rounded-xl overflow-hidden">
-              <img
-                src="/images/giveprism/screenshot-2.png"
-                alt="Prompt Refinement Interface"
-                className="w-full h-auto"
-                loading="lazy"
-              />
+              <img src="/images/giveprism/screenshot-2.png" alt="Prompt Refinement Interface" className="w-full h-auto" loading="lazy" />
             </div>
             <div className="bg-[#1a1a1a] rounded-xl overflow-hidden">
-              <img
-                src="/images/giveprism/screenshot-3.png"
-                alt="Donor List View"
-                className="w-full h-auto"
-                loading="lazy"
-              />
+              <img src="/images/giveprism/screenshot-3.png" alt="Donor List View" className="w-full h-auto" loading="lazy" />
             </div>
           </div>
         </div>
 
         {/* Data Snapshots at Every Level */}
-        <div
-          className="w-full backdrop-blur-[50px]"
-          style={gradientStyle}
-        >
-          {/* Caption */}
-          <div className="px-6 lg:px-10 pt-6 pb-4 max-w-[1440px] mx-auto">
+        <div className="w-full">
+          <div className="px-6 lg:px-10 pb-4 max-w-[1440px] mx-auto">
             <div className="flex flex-col gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-6 py-5 shadow-sm">
               <h3 className="font-heading text-2xl font-normal text-black">
                 Data Snapshots at Every Level
@@ -191,35 +168,19 @@ const GivePrismDetail: FC = () => {
               </p>
             </div>
           </div>
-
-          {/* Screenshots */}
-          <div className="flex flex-col gap-6 px-6 lg:px-10 pb-8 max-w-[1440px] mx-auto">
+          <div className="flex flex-col gap-6 px-6 lg:px-10 pb-10 max-w-[1440px] mx-auto">
             <div className="bg-[#1a1a1a] rounded-xl overflow-hidden">
-              <img
-                src="/images/giveprism/screenshot-6.png"
-                alt="Data Snapshot Dashboard - Prospect Profile"
-                className="w-full h-auto"
-                loading="lazy"
-              />
+              <img src="/images/giveprism/screenshot-6.png" alt="Data Snapshot Dashboard - Prospect Profile" className="w-full h-auto" loading="lazy" />
             </div>
             <div className="bg-[#1a1a1a] rounded-xl overflow-hidden">
-              <img
-                src="/images/giveprism/screenshot-7.png"
-                alt="Detailed Prospect View with Expanded Row"
-                className="w-full h-auto"
-                loading="lazy"
-              />
+              <img src="/images/giveprism/screenshot-7.png" alt="Detailed Prospect View with Expanded Row" className="w-full h-auto" loading="lazy" />
             </div>
           </div>
         </div>
 
         {/* Refine Without Breaking Flow */}
-        <div
-          className="w-full backdrop-blur-[50px]"
-          style={gradientStyle}
-        >
-          {/* Caption */}
-          <div className="px-6 lg:px-10 pt-6 pb-4 max-w-[1440px] mx-auto">
+        <div className="w-full">
+          <div className="px-6 lg:px-10 pb-4 max-w-[1440px] mx-auto">
             <div className="flex flex-col gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-6 py-5 shadow-sm">
               <h3 className="font-heading text-2xl font-normal text-black">
                 Refine Without Breaking Flow
@@ -229,27 +190,16 @@ const GivePrismDetail: FC = () => {
               </p>
             </div>
           </div>
-
-          {/* Screenshots */}
-          <div className="flex flex-col gap-6 px-6 lg:px-10 pb-8 max-w-[1440px] mx-auto">
+          <div className="flex flex-col gap-6 px-6 lg:px-10 pb-10 max-w-[1440px] mx-auto">
             <div className="bg-[#1a1a1a] rounded-xl overflow-hidden">
-              <img
-                src="/images/giveprism/screenshot-4.png"
-                alt="Filter Panel Interface"
-                className="w-full h-auto"
-                loading="lazy"
-              />
+              <img src="/images/giveprism/screenshot-4.png" alt="Filter Panel Interface" className="w-full h-auto" loading="lazy" />
             </div>
           </div>
         </div>
 
         {/* An AI Assistant, Built into the Workflow */}
-        <div
-          className="w-full backdrop-blur-[50px]"
-          style={gradientStyle}
-        >
-          {/* Caption */}
-          <div className="px-6 lg:px-10 pt-6 pb-4 max-w-[1440px] mx-auto">
+        <div className="w-full">
+          <div className="px-6 lg:px-10 pb-4 max-w-[1440px] mx-auto">
             <div className="flex flex-col gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-6 py-5 shadow-sm">
               <h3 className="font-heading text-2xl font-normal text-black">
                 An AI Assistant, Built into the Workflow
@@ -259,16 +209,9 @@ const GivePrismDetail: FC = () => {
               </p>
             </div>
           </div>
-
-          {/* Screenshots */}
-          <div className="flex flex-col gap-6 px-6 lg:px-10 pb-8 max-w-[1440px] mx-auto">
+          <div className="flex flex-col gap-6 px-6 lg:px-10 max-w-[1440px] mx-auto">
             <div className="bg-[#1a1a1a] rounded-xl overflow-hidden">
-              <img
-                src="/images/giveprism/screenshot-5.png"
-                alt="AI Assistant Interface"
-                className="w-full h-auto"
-                loading="lazy"
-              />
+              <img src="/images/giveprism/screenshot-5.png" alt="AI Assistant Interface" className="w-full h-auto" loading="lazy" />
             </div>
           </div>
         </div>
