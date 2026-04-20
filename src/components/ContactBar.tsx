@@ -17,8 +17,8 @@ const ContactBar: FC = () => {
       </a>
       <div className="w-5 h-5 rounded-full bg-(--color-brand-purple) shrink-0" />
       <a 
-        href="/files/Alex_Tran_2026.pdf" 
-        target="_blank"
+        href="#resume" 
+        target="_blank" 
         rel="noopener noreferrer"
         className="font-heading text-[40px] font-normal text-(--color-text-primary) underline hover:text-(--color-brand-purple) transition-colors"
       >

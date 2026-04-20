@@ -21,7 +21,7 @@ export const usePageTracking = () => {
   useEffect(() => {
     if (typeof window.gtag !== 'undefined') {
       // Track page view
-      window.gtag('config', 'G-DC7HFJJM34', {
+      window.gtag('config', 'GA_MEASUREMENT_ID', {
         page_path: location.pathname + location.search,
       });
     }
