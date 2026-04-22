@@ -60,32 +60,29 @@ const EPaymentsDetail: FC = () => {
         className="w-full mt-8 rounded-t-[5px] backdrop-blur-[50px] p-6 lg:p-8"
         style={gradientStyle}
       >
-        {/* All three images share the same height; each container is tight around its image */}
-        <div
-          className="flex flex-row justify-center gap-4 max-w-[1440px] mx-auto"
-          style={{ height: 'clamp(200px, 35vw, 420px)' }}
-        >
-          <div className="rounded-xl overflow-hidden shrink-0">
+        {/* Mobile: stacked vertically. md+: side-by-side with clamped height */}
+        <div className="flex flex-col md:flex-row justify-center gap-4 max-w-[1440px] mx-auto">
+          <div className="rounded-xl overflow-hidden">
             <img
               src="/images/epayments/hero%20image%201.png"
               alt="CARE+ Premiums Homepage — Desktop Dashboard"
-              className="h-full w-auto block"
+              className="w-full h-auto md:h-[clamp(200px,35vw,420px)] md:w-auto block"
               loading="lazy"
             />
           </div>
-          <div className="rounded-xl overflow-hidden shrink-0">
+          <div className="rounded-xl overflow-hidden">
             <img
               src="/images/epayments/hero%20image%202.png"
               alt="Mobile — Premiums Due Notification"
-              className="h-full w-auto block"
+              className="w-full h-auto md:h-[clamp(200px,35vw,420px)] md:w-auto block"
               loading="lazy"
             />
           </div>
-          <div className="rounded-xl overflow-hidden shrink-0">
+          <div className="rounded-xl overflow-hidden">
             <img
               src="/images/epayments/hero%20image%203.png"
               alt="Mobile — Review Your Payment Screen"
-              className="h-full w-auto block"
+              className="w-full h-auto md:h-[clamp(200px,35vw,420px)] md:w-auto block"
               loading="lazy"
             />
           </div>
