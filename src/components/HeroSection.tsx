@@ -54,19 +54,24 @@ const HeroSection: FC = () => {
         <div className="flex flex-col gap-4">
           {/* Name */}
           <div className="flex flex-wrap items-center font-heading text-[56px] font-bold leading-tight">
-            <span className="text-(--color-text-primary) mr-12">Alex </span>
-            <div className="flex items-center">
+            <span className="text-(--color-text-primary) mr-4 md:mr-12">Alex </span>
+            {/*
+              w-full on mobile forces this div to always wrap to its own flex row,
+              preventing the name row from collapsing to 1 line when the word is short.
+              This keeps the name row height constant → no vertical bounce.
+            */}
+            <div className="flex items-center w-full md:w-auto">
               <span className="text-(--color-brand-purple)">
                 {animatedText}
                 <span className="animate-pulse">|</span>
               </span>
-              <span className="text-(--color-text-primary) ml-12">Tran</span>
+              <span className="text-(--color-text-primary) ml-3 md:ml-12">Tran</span>
             </div>
           </div>
 
           {/* Tagline */}
           <h1 className="font-heading text-[56px] font-normal text-(--color-text-primary) leading-tight">
-            {animatedText} , it&apos;s my middle name.
+            it&apos;s my middle name.
           </h1>
 
           {/* Description */}
