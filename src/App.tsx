@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import PasscodeGate from './components/PasscodeGate';
 import HeroSection from './components/HeroSection';
 import ContactBar from './components/ContactBar';
 import ProjectsSection from './components/ProjectsSection';
@@ -28,6 +29,7 @@ const App: FC = () => {
   usePageTracking();
 
   return (
+    <PasscodeGate>
     <div className="min-h-screen bg-(--color-bg-primary) flex flex-col">
       <ScrollToTop />
       <div className="flex-grow">
@@ -42,6 +44,7 @@ const App: FC = () => {
       </div>
       {isHomePage && <ContactBar />}
     </div>
+    </PasscodeGate>
   );
 };
 
